@@ -65,7 +65,7 @@ s2 = "eygoodb"
 Expected output: False
 
 Sample Solution:
-```
+```javascript
 function isRotation(s1, s2) {
 if (s1.length !== s2.length) {
 return false;
@@ -83,7 +83,7 @@ return str.includes(substr);
 }
 ```
 Testing the isRotation function
-```
+```javascript
 const s1 = "goodbye";
 const s2 = "eygoodb";
 
@@ -100,7 +100,7 @@ not_string('x') → 'not x'
 not_string('not bad') → 'not bad'
 
 Sample solution
-```
+```javascript
 function not_string(str) {
   if (str.startsWith("not")) {
     return str;
@@ -110,7 +110,7 @@ function not_string(str) {
 }
 ```
 Test Cases
-```
+```javascript
 console.log(not_string('candy'));     // Output: 'not candy'
 console.log(not_string('x'));         // Output: 'not x'
 console.log(not_string('not bad'));   // Output: 'not bad'
@@ -125,7 +125,7 @@ front_times('Chocolate', 3) → 'ChoChoCho'
 front_times('Ok', 4) → 'OkOkOkOk'
 
 Sample solution
-```
+```javascript
 function front_times(str, n) {
 
   var front = str.substring(0, 3);
@@ -138,7 +138,7 @@ function front_times(str, n) {
 ```
 
 Test cases
-```
+```javascript
 console.log(front_times('Chocolate', 2)); // Output: 'ChoCho'
 console.log(front_times('Chocolate', 3)); // Output: 'ChoChoCho'
 console.log(front_times('Ok', 4));        // Output: 'OkOkOkOk'
@@ -152,7 +152,7 @@ string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 
 Sample solution
-```
+```javascript
 function string_times(str, n) {
  
   var result = "";  
@@ -164,7 +164,7 @@ function string_times(str, n) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(string_times('Hi', 2)); // Output: 'HiHi'
 console.log(string_times('Hi', 3)); // Output: 'HiHiHi'
 console.log(string_times('Hi', 1)); // Output: 'Hi'
@@ -179,7 +179,7 @@ string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 
 Sample solution
-```
+```javascript
 function string_splosion(str) {
   var result = "";
 
@@ -190,7 +190,7 @@ function string_splosion(str) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(string_splosion('Code')); // Output: 'CCoCodCode'
 console.log(string_splosion('abc'));  // Output: 'aababc'
 console.log(string_splosion('ab'));   // Output: 'aab'
@@ -205,7 +205,7 @@ last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 
 Sample solution
-```
+```javascript
 function last2(str) {
  
   if (str.length < 2) {
@@ -225,7 +225,7 @@ function last2(str) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(last2('hixxhi'));      // Output: 1
 console.log(last2('xaxxaxaxx'));   // Output: 1
 console.log(last2('axxxaaxx'));    // Output: 2
@@ -241,7 +241,7 @@ string_bits('Hi') → 'H'
 string_bits('Heeololeo') → 'Hello'
 
 Sample solution
-```
+```javascript
 function string_bits(str) {
   var result = "";
 
@@ -254,7 +254,7 @@ function string_bits(str) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(string_bits('Hello'));      // Output: 'Hlo'
 console.log(string_bits('Hi'));         // Output: 'H'
 console.log(string_bits('Heeololeo')); // Output: 'Hello'
@@ -268,7 +268,7 @@ string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
 
 Sample solution
-```
+```javascript
 function string_match(a, b) {
   var minLength = Math.min(a.length, b.length);
   var count = 0;
@@ -284,7 +284,7 @@ function string_match(a, b) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(string_match('xxcaazz', 'xxbaaz')); // Output: 3
 console.log(string_match('abc', 'abc'));         // Output: 2
 console.log(string_match('abc', 'axc'));         // Output: 0
@@ -299,7 +299,7 @@ hello_name('Alice') → 'Hello Alice!'
 hello_name('X') → 'Hello X!'
 
 Sample solution
-```
+```javascript
 function string_match(a, b) {
   var minLength = Math.min(a.length, b.length);
   var count = 0;
@@ -314,7 +314,7 @@ function string_match(a, b) {
 ```
 
 Test cases
-```
+```javascript
 console.log(string_match('xxcaazz', 'xxbaaz')); // Output: 3
 console.log(string_match('abc', 'abc'));         // Output: 2
 console.log(string_match('abc', 'axc'));         // Output: 0
@@ -329,7 +329,7 @@ make_out_word('<<>>', 'WooHoo') → '<<WooHoo>>'
 make_out_word('[[]]', 'word') → '[[word]]'
 
 Sample solution
-```
+```javascript
 function make_out_word(out, word) {
 
   var firstPart = out.substring(0, 2);  
@@ -339,7 +339,7 @@ function make_out_word(out, word) {
 }
 ```
 Test cases
-```
+```javascript
 console.log(make_out_word('<<>>', 'Yay'));     // Output: '<<Yay>>'
 console.log(make_out_word('<<>>', 'WooHoo')); // Output: '<<WooHoo>>'
 console.log(make_out_word('[[]]', 'word'));   // Output: '[[word]]'
